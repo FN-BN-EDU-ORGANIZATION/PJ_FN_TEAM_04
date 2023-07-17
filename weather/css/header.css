@@ -17,14 +17,26 @@
   }
 
 .wrapper>header> .wrapper-head> .hour{
-    width: 100px;
-    height: 10vh;
+    width: 150px;
+    height: 100px;
     top:10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: flex-end;
     flex-direction: column;
+    font-family: 'Tourney', cursive;
 
+}
+.wrapper>header> .wrapper-head> .hour> .time{
+    
+    letter-spacing: 0.3em;
+    font-size: 30px;
+    font-size:2em;
+}
 
+.wrapper>header> .wrapper-head> .hour> .date{
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    font-size:1.5em;
 }
