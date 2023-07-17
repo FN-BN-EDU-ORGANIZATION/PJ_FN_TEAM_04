@@ -6,10 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+
+  <!-- js파일 연결 -->
+  <script defer src="./js/footer.js"></script>
+  <script defer src="./js/header.js"></script>
+  <script defer src="./js/main.js"></script>
+
+  <!-- ==========================외부 임폴트=========================================================== -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <!-- ========================================================================================================== -->
 
-
-
+  <!-- css -->
   <!-- Common -->
   <link rel="stylesheet" href="css/common.css">
 
@@ -21,6 +30,8 @@
 
   <!-- footer -->
   <link rel="stylesheet" href="css/footer.css">
+
+
 </head>
 
 <body>
@@ -59,33 +70,41 @@
       <div class="wrapper-body">
         <section>
           <div class="addr">
-              <li style="font-size: 2.7vh;">(시,도)/</li>
-              <li style="font-size: 2.7vh;">(구,군)/</li>
-              <li style="font-size: 2.7vh;">(동,읍,면)</li>
+            <li style="font-size: 2.7vh;">(시,도)/</li>
+            <li style="font-size: 2.7vh;">(구,군)/</li>
+            <li style="font-size: 2.7vh;">(동,읍,면)</li>
           </div>
 
           <div class="weather-icon">
-              <a><img src="./css/img/0.png" style="width: 21vh; height: 21vh;"></a>
+            <a><img src="./css/img/0.png" style="width: 21vh; height: 21vh;"></a>
           </div>
 
           <div class="weather-text">
-              <a>
-                  <li style="font-size: 2.7vh;">기온: T1H ℃</li>
-                  <li style="font-size: 2.7vh;">습도: REH %</li>
-                  <li style="font-size: 2.7vh;">강수량: R1N mm</li>
-              </a>
+            <a>
+              <li style="font-size: 2.7vh;">기온: T1H ℃</li>
+              <li style="font-size: 2.7vh;">습도: REH %</li>
+              <li style="font-size: 2.7vh;">강수량: R1N mm</li>
+            </a>
           </div>
           <!-- fcst 아이콘+글 추가 -->
           <div class="fcst">
-            <a><img src="./css/img/0.png" style="width: 12vh; height: 12vh;"><li style="font-size: 2.2vh;">기온: T1H ℃</li></a>
-            <a><img src="./css/img/1.png" style="width: 12vh; height: 12vh;"><li style="font-size: 2.2vh;">기온: T1H ℃</li></a>
-            <a><img src="./css/img/2.png" style="width: 12vh; height: 12vh;"><li style="font-size: 2.2vh;">기온: T1H ℃</li></a>
-            <a><img src="./css/img/3.png" style="width: 12vh; height: 12vh;"><li style="font-size: 2.2vh;">기온: T1H ℃</li></a>
+            <a><img src="./css/img/0.png" style="width: 12vh; height: 12vh;">
+              <li style="font-size: 2.2vh;">기온: T1H ℃</li>
+            </a>
+            <a><img src="./css/img/1.png" style="width: 12vh; height: 12vh;">
+              <li style="font-size: 2.2vh;">기온: T1H ℃</li>
+            </a>
+            <a><img src="./css/img/2.png" style="width: 12vh; height: 12vh;">
+              <li style="font-size: 2.2vh;">기온: T1H ℃</li>
+            </a>
+            <a><img src="./css/img/3.png" style="width: 12vh; height: 12vh;">
+              <li style="font-size: 2.2vh;">기온: T1H ℃</li>
+            </a>
           </div>
           <!-- fcstEvent 삭제 -->
-    
 
-      </section>
+
+        </section>
         <section>
 
           <div class="says">
@@ -94,9 +113,11 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">'전깃불이 나간 어두운 방안에서 초가 있으면서도 초를 아끼느라 켜지 않는다면 어떻게 될까. 마찬가지로 한두 마디의 상냥한 말이면 상대방의 마음을 밝게 해 주고 유쾌한 분위기를 만들 수 있는데 그러지 않는다면 그것은 마치 초를 아끼기 위해 어둠 속에 있는 것과 같다. '</div>
+                <div class="swiper-slide">'전깃불이 나간 어두운 방안에서 초가 있으면서도 초를 아끼느라 켜지 않는다면 어떻게 될까. 마찬가지로 한두 마디의 상냥한 말이면 상대방의
+                  마음을 밝게 해 주고 유쾌한 분위기를 만들 수 있는데 그러지 않는다면 그것은 마치 초를 아끼기 위해 어둠 속에 있는 것과 같다. '</div>
                 <div class="swiper-slide">'‘할 수 없다’ 고 생각하는 것은 ‘하기 싫다’ 고 다짐하는 것과 같다. '</div>
-                <div class="swiper-slide">'무수한 사람들 가운데는 나와 뜻을 같이할 사람이 한둘은 있을 것이다. 그것으로 충분하다. 공기를 호흡하는 데는 들창문 하나로도 족하다. '</div>
+                <div class="swiper-slide">'무수한 사람들 가운데는 나와 뜻을 같이할 사람이 한둘은 있을 것이다. 그것으로 충분하다. 공기를 호흡하는 데는 들창문 하나로도 족하다. '
+                </div>
               </div>
             </div>
             <div class="swiper">
@@ -107,16 +128,16 @@
                 <div class="swiper-slide">-스피노자-</div>
                 <div class="swiper-slide">-R. 롤랑-</div>
               </div>
-             </div>
-
-              
+            </div>
 
 
 
-              <!-- <div id="say" style="color: rebeccapurple;">'일을 끝까지 못해도 좋다. 다만 처음부터 포기할 생각만은 하지 말라. 그대에게 그 일을 맡긴 사람은 언제나 희망을
+
+
+            <!-- <div id="say" style="color: rebeccapurple;">'일을 끝까지 못해도 좋다. 다만 처음부터 포기할 생각만은 하지 말라. 그대에게 그 일을 맡긴 사람은 언제나 희망을
               버리지 않는다.'</div>
             <div id="anter">-탈무드-</div> -->
-           
+
 
         </section>
       </div>
@@ -125,23 +146,22 @@
       <div class="wrapper-foot">
         <div class="btn-01">
           <button id="showListButton">
-              <div class="BTN">
-                  <img src="./css/img/free-icon-mechanical-gears-64722.png" alt=""
-                      style="width: 9vh; height: 9vh;">
-              </div>
+            <div class="BTN">
+              <img src="./css/img/free-icon-mechanical-gears-64722.png" alt="" style="width: 9vh; height: 9vh;">
+            </div>
           </button>
           <div class="btn-02">
-              <ul class="Setting-box" id="listBox">
-                  <li><a href="">버튼1</a></li>
-                  <li><a href="">버튼2</a></li>
-                  <li><a href="">버튼3</a></li>
-                  <li><a href="">버튼4</a></li>
-                  <li><a href="">버튼5</a></li>
-                  <li><a href="">버튼6</a></li>
-                  <li><a href="">버튼7</a></li>
-              </ul>
+            <ul class="Setting-box" id="listBox">
+              <li><a href="">버튼1</a></li>
+              <li><a href="">버튼2</a></li>
+              <li><a href="">버튼3</a></li>
+              <li><a href="">버튼4</a></li>
+              <li><a href="">버튼5</a></li>
+              <li><a href="">버튼6</a></li>
+              <li><a href="">버튼7</a></li>
+            </ul>
           </div>
-      </div>
+        </div>
 
         <div class="calender">
           <h1 onClick="" ; style="cursor:pointer;">📅</h1>
@@ -233,96 +253,7 @@
     </footer>
   </div>
 
-  <!-- ===============쓰끄립뜨========================== -->
-
-  <!-- ==========================외부 임폴트=========================================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-
-  <!-- ========================================================================================================== -->
-  <script>
-
-    //날씨상세
-    $(function () {
-            $('.fcst').hide();
-            $('.weather-icon').hover(function () {
-                $(this).parent().find('.fcst').slideToggle(400);
-                $(this).parent().hover(function () {
-                })
-            });
-        });
-
-
-    <!-- 뉴스메뉴 -->
-    function showNewsList() {
-      const newsList = document.querySelector('.news-list');
-      if (newsList.style.visibility === 'hidden') {
-        newsList.style.visibility = 'visible';
-      } else {
-        newsList.style.visibility = 'hidden';
-      }
-    }
-    // 타이머
-    function displayDateTime() {
-      const date = new Date();
-      const year = date.getFullYear();
-      const month = date.getMonth() + 1;
-      const day = date.getDate();
-      const hours = date.getHours();
-      const minutes = date.getMinutes();
-      const time = `${hours}:${minutes < 10 ? '0' + minutes : minutes}`;
-      const dateString = `${year}-${month < 10 ? '0' + month : month}-${day < 10 ? '0' + day : day}`;
-
-      const dateElements = document.getElementsByClassName('date');
-      const timeElements = document.getElementsByClassName('time');
-      for (let i = 0; i < dateElements.length; i++) {
-        dateElements[i].textContent = dateString;
-      }
-      for (let i = 0; i < timeElements.length; i++) {
-        timeElements[i].textContent = time;
-      }
-    }
-    setInterval(displayDateTime, 1000); // 1초마다 날짜와 시간 갱신
-
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true,
-      autoplay: {
-      delay: 5000,
-      },
-
-
-    });
-
-//셋팅
-    // 버튼에 대한 이벤트 변수
-const Button = document.getElementById('showListButton');
-
-// 마우스가 버튼 위로 올라갔을 때 리스트 보이기 ㄱㄱ
-function showListBox() {
-    const listBox = document.getElementById('listBox');
-    const listItems = listBox.querySelectorAll('li'); //idx 7
-    listBox.style.display = 'block';
-    listItems.forEach((item) => (item.style.opacity = '1'));
-}
-
-// 마우스가 버튼에서 벗어났을 때 리스트 사라지게 ㄱㄱ
-function hideListBox() {
-    //리스트 목록
-    const listBox = document.getElementById('listBox');
-    const listItems = listBox.querySelectorAll('li');
-    listItems.forEach((item) => (item.style.opacity = '0'));
-    setTimeout(function () {
-        listBox.style.display = 'none';
-    }, 10);
-}
-
-//버튼 hover 시 메서드 호출
-Button.addEventListener('mouseenter', showListBox);
-Button.addEventListener('mouseleave', hideListBox);
-
-  </script>
+  
 </body>
 
 </html>
